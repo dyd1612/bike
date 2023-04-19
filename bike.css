@@ -1,0 +1,87 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(238, 247, 60);
+}
+ul{
+    position: absolute;
+
+    top: 5%;
+    right: 5%;
+}
+ul li{
+    display: inline-block;
+    margin-right: 50px;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+.thumbnail{
+padding-top: 7%;
+}
+.thumbnail li{
+    list-style: none;
+    position: relative;
+    margin-top: 50px;
+}
+.thumbnail img{
+    display: block;
+    max-width: 120px;
+    transition: 0.5s;
+}
+.thumbnail img:hover{
+    transform: translateX(30px);
+    transition: 0.5s;
+}
+.big-img{
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    max-width: 500px;
+    max-height: 300px;
+}
+.content{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    max-width: 60%;
+}
+.content p{
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: cursive;
+    margin-left: 16%;
+    text-shadow: 2px 0 2px white;
+    margin-bottom: 1px;
+}
+.content h1{
+    font-weight: 500;
+    font-size: 80px;
+    color: rgb(28, 211, 211);
+    text-shadow: 2px 0 2px black;
+    font-family: fantasy;
+    margin-bottom: 1px;
+}
+.content h5{
+    font-weight: bold;
+    color: black;
+    font-size: 22px;
+    text-shadow: 2px 0 2px white;
+    font-family: sans-serif;
+    margin-left: 18%;
+}
+.path{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #e5e5e5;
+    clip-path: circle(520px at left 300px);
+}

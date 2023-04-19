@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bike.css">
+    <title>Bike</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="path">
+
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About us</a></li>
+            
+        </ul>
+        <div class="thumbnail">
+            <li> <img class="bikeimg" src="img/bike1.jpeg" onclick="big('img/bike1.jpeg'); path('pink') "alt=""></li>
+            <li><img class="bikeimg" src="img/bike2.jpeg" onclick="big('img/bike2.jpeg'); path('grey')" alt=""></li>
+            <li> <img class="bikeimg" src="img/bike3.jpeg" onclick="big('img/bike3.jpeg'); path('#e5e5e5')" alt=""></li>
+
+        </div>
+        <div class="big-img">
+            <img class="big" src="img/bike3.jpeg" alt="">
+        </div>
+        <div class="content">
+            <p>&#x1f525;Lets drive &#x1f525;</p><br>
+            <h1>Don't Fear Dying <br>&nbsp; &nbsp; Fear Not living</h1><br><br>
+            <h5>&#x1f60e; For bike lover &#x12f;</h5>
+        </div>
+
+    </div>
+
+    <script>
+        function big(img) {
+            document.querySelector(".big").src = img
+        }
+        function path(color){
+          const path = document.querySelector('.path')
+          path.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
